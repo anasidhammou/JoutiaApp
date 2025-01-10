@@ -5,28 +5,48 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.joutiaapp.MainActivity;
+import com.example.joutiaapp.Models.Vendeur;
 import com.example.joutiaapp.R;
 import com.example.joutiaapp.Vendeur.MainVendeurActivity;
 import com.example.joutiaapp.Vendeur.ProfilVendeurActivity;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 
 public class SettingsVendeurFragment extends Fragment {
 
     TextView mailV, nomM;
+
+    List<Vendeur> allVendeurarray = new ArrayList<>();
+
+    DatabaseReference allVendeur;
+
+    ImageView imageView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,9 +56,11 @@ public class SettingsVendeurFragment extends Fragment {
         return view;
     }
     private void findView(View view) {
+        allVendeur = FirebaseDatabase.getInstance().getReference().child("vendeur");
         TextView go_sign_in=view.findViewById(R.id.go_sign_in);
         mailV = view.findViewById(R.id.MailVendeur);
         nomM = view.findViewById(R.id.nomMg);
+        imageView = view.findViewById(R.id.img_pro);
         verifyLogin();
         go_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,8 +147,46 @@ public class SettingsVendeurFragment extends Fragment {
             String name = sharedPreferences.getString("NomUser", "default_username");
             mailV.setText(username);
             nomM.setText(name);
+            getporfilepic(username);
         } else {
             mailV.setText(getString(R.string.merci_de_vous_connecter));
+        }
+    }
+
+    private void getporfilepic(String username) {
+        allVendeurarray.clear();
+        allVendeur.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    allVendeurarray.add(postSnapshot.getValue(Vendeur.class));
+                }
+                for (int i = 0; i < allVendeurarray.size(); i++) {
+                    if(allVendeurarray.get(i).mail.equals(username)){
+                        Bitmap bitmap = base64ToBitmap(allVendeurarray.get(i).ArrayImage.get(0));
+                        if (bitmap != null) {
+                            imageView.setImageBitmap(bitmap);
+                        } else {
+                            imageView.setImageResource(R.drawable.default_img);
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private Bitmap base64ToBitmap(String base64String) {
+        try {
+            byte[] decodedBytes = Base64.decode(base64String, Base64.DEFAULT);
+            return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 

@@ -31,6 +31,7 @@ import android.Manifest;
 
 import com.example.joutiaapp.Adapter.ViewPagerAdapter;
 import com.example.joutiaapp.Models.PanierUser;
+import com.example.joutiaapp.Models.Vendeur;
 import com.example.joutiaapp.Models.product;
 import com.example.joutiaapp.PanierActivity;
 import com.example.joutiaapp.R;
@@ -73,7 +74,13 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
 
     String stype;
 
+    ImageView pictures;
+
     ViewPager2 viewPager2;
+
+    List<Vendeur> allVendeurarray = new ArrayList<>();
+
+    DatabaseReference allVendeur;
 
     private static final int REQUEST_CALL_PERMISSION = 1;
 
@@ -89,6 +96,8 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
         });
 
         panierUsers=SharedPreferencesUtils.getArray(this, "PanierKey");
+        allVendeur = FirebaseDatabase.getInstance().getReference().child("vendeur");
+        pictures = findViewById(R.id.pictures);
         viewPager2= findViewById(R.id.viewPager);
         if(panierUsers == null){
             panierUsers = new ArrayList<>();
@@ -155,6 +164,7 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
 
                 prixProd.setText(allproductarrayfiltred.get(i).Montant_TTC+" "+"MAD");
                 NomMagasin.setText(allproductarrayfiltred.get(i).NomMagasin.toString());
+                getallVendeur(allproductarrayfiltred.get(i).NomMagasin.toString());
                 PhoneMagasin.setText(allproductarrayfiltred.get(i).phone.toString());
                 PhoeVendeur=allproductarrayfiltred.get(i).phone.toString();
                 description.setText(allproductarrayfiltred.get(i).Description.toString());
@@ -190,6 +200,33 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    private void getallVendeur(String username) {
+        allVendeurarray.clear();
+        allVendeur.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    allVendeurarray.add(postSnapshot.getValue(Vendeur.class));
+                }
+                for (int i = 0; i < allVendeurarray.size(); i++) {
+                    if(allVendeurarray.get(i).nommagasin.equals(username)){
+                        Bitmap bitmap = base64ToBitmap(allVendeurarray.get(i).ArrayImage.get(0));
+                        if (bitmap != null) {
+                            pictures.setImageBitmap(bitmap);
+                        } else {
+                            pictures.setImageResource(R.drawable.default_img);
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private Bitmap base64ToBitmap(String base64String) {

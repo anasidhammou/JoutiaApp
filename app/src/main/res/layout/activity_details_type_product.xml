@@ -190,6 +190,7 @@
 
 
                     <ImageView
+                        android:id="@+id/pictures"
                         android:layout_marginLeft="20dp"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
