@@ -1,0 +1,4 @@
+<!-- res/xml/gma_ad_services_config.xml -->
+<ad-services-config>
+    <use-ad-services>false</use-ad-services>
+</ad-services-config>

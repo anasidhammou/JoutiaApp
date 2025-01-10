@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">JoutiaApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_ok">OK</string>
+    <string name="arabe">Arabe</string>
+    <string name="fran_ais">Français</string>
+    <string name="accueil">Accueil</string>
+    <string name="cat_gories">Catégories</string>
+    <string name="mon_compte">Mon Compte</string>
+    <string name="aide">Aide</string>
+    <string name="recherche_sur_joutia">Recherche sur Joutia</string>
+    <string name="espace_publicit_et_promotions">Espace publicité et Promotions</string>
+    <string name="nos_cat_gories">Nos catégories</string>
+    <string name="produits_r_cents">Produits Récents</string>
+    <string name="acheter">Ajouter au Panier</string>
+    <string name="espaces_ads">Espaces ADS</string>
+    <string name="nos_boutiques_officiels">Nos boutiques officiels</string>
+    <string name="choix_de_la_semaine">Choix de la semaine</string>
+    <string name="objets_connect_s">Objets connectés</string>
+    <string name="sant_et_beaut">Santé et Beauté</string>
+    <string name="sport_et_loisir">Sport et Loisir</string>
+    <string name="b_b_et_jouets">Bébé et Jouets</string>
+    <string name="d_coration_maison">Décoration Maison</string>
+    <string name="mode_et_accessoires">Mode et Accessoires</string>
+    <string name="electrom_nager">Electroménager</string>
+    <string name="mes_commandes">Mes commandes</string>
+    <string name="devenir_vendeur">Devenir Vendeur</string>
+    <string name="boite_de_r_ception">Boite de réception</string>
+    <string name="bon_d_achat">Bon d\'achat</string>
+    <string name="modifier_profil">Modifier Profil</string>
+    <string name="aide_et_support">Aide et Support</string>
+    <string name="changer_de_langue">Changer de langue</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="d_marer_le_chat_en_direct">Démarrer le chat en direct</string>
+    <string name="a_propos_de_joutia">A PROPOS DE JOUTIA</string>
+    <string name="a_propos_de_nos_services">A propos de nos Services</string>
+    <string name="centre_d_assistance">Centre d\'assistance</string>
+    <string name="politique_de_confidentialit">Politique de Confidentialité</string>
+    <string name="notifications">Notifications</string>
+    <string name="pays">Pays</string>
+    <string name="langue">Langue</string>
+    <string name="informations_sur_l_application">INFORMATIONS SUR L\'APPLICATION</string>
+    <string name="version_de_l_application_1_0_0">Version de l\'application 1.0.0</string>
+    <string name="connexion">Connexion</string>
+    <string name="client">Client</string>
+    <string name="vendeur">Vendeur</string>
+    <string name="adresse_mail_ou_t_lephone">Adresse mail</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="vous_n_avez_pas_de_compte_inscrivez_vous">Vous n\'avez pas de compte ? Inscrivez-vous !</string>
+    <string name="inscription">Inscription</string>
+    <string name="adresse_mail">Adresse mail</string>
+    <string name="nom_complet">Nom complet</string>
+    <string name="adresse_de_livraison">Adresse de livraison</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="inscription_vendeur">Inscription Vendeur</string>
+    <string name="nom_du_magasin">Nom du magasin</string>
+    <string name="adresse_du_magasin">Adresse du magasin</string>
+    <string name="rib_bancaire_du_compte">Rib Bancaire du compte</string>
+    <string name="ville_de_livraison">Ville de livraison :</string>
+    <string name="point_relais">- Point relais :</string>
+    <string name="livraison_domicile">- Livraison à domicile :</string>
+    <string name="modalit_s_de_retour">- Modalités de retour :</string>
+    <string name="evolution_de_produit">Evolution de produit :</string>
+    <string name="d_tails_de_produit">Détails de produit :</string>
+    <string name="appelez">Appelez</string>
+    <string name="informations_persnonneles">Informations persnonnelles</string>
+    <string name="adresse">Adresse </string>
+    <string name="ville">Ville </string>
+    <string name="t_l_phone">Téléphone </string>
+    <string name="mettre_jour">Mettre à jour</string>
+    <string name="choisir_votre_langue">Choisir votre langue</string>
+    <string name="changer_la_langue">Changer la langue</string>
+    <string name="image_du_produit">Image du Produit :</string>
+    <string name="pour_uploader_les_photos_merci_de_cliquer_sur_le_en_haut">Pour uploader les photos, merci de cliquer sur le (+) en haut</string>
+    <string name="uploader_ou_prendre_au_max_1_photo">* Uploader ou prendre au max 3 photo</string>
+    <string name="nom_du_produit">Nom du Produit :</string>
+    <string name="description_du_produit">Description du Produit :</string>
+    <string name="prix_du_produit">Prix du Produit :</string>
+    <string name="quantit_du_produit">Quantité du Produit :</string>
+    <string name="d_lai_de_livraison_du_produit">Délai de livraison du Produit :</string>
+    <string name="cat_gorie_du_produit">Catégorie du produit</string>
+    <string name="marque_du_produit">Marque du produit</string>
+    <string name="etat_du_produit">Etat du produit</string>
+    <string name="neuf">Neuf</string>
+    <string name="_2_me_main">2éme main</string>
+    <string name="valider">Valider</string>
+    <string name="produit">Produit</string>
+    <string name="commandes">Commandes</string>
+    <string name="param_tres">Paramètres</string>
+    <string name="rib">RIB :</string>
+    <string name="en_attente">En attente</string>
+    <string name="valid">Validé</string>
+    <string name="rejet">Rejeté</string>
+    <string name="en_cours">En cours</string>
+    <string name="livr_e">Livrée</string>
+    <string name="refus_e">Refusée</string>
+    <string name="annul_e">Annulée</string>
+    <string name="historique_commandes">Historique Commandes</string>
+    <string name="changer_de_profil">Changer de profil</string>
+    <string name="tes_vous_sur_de_vouloir_retourner_la_partie_acheteur">Êtes vous sur de vouloir retourner à la partie acheteur ?</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+    <string name="choisir_une_langue">Choisir une langue</string>
+    <string name="voulez_vous_vous_inscrire_autant_que">Voulez vous vous inscrire autant que ?</string>
+    <string name="les_2_champs_sont_obligatoires">Les 2 champs sont obligatoires.</string>
+    <string name="adresse_email_invalide">Adresse email invalide</string>
+    <string name="une_erreur_est_survenue_merci_de_r_essayer_plus_tard">Une erreur est survenue, merci de réessayer plus tard</string>
+    <string name="adresse_email_obligatoire">Adresse Email obligatoire</string>
+    <string name="t_l_phone_obligatoire">Téléphone obligatoire</string>
+    <string name="mot_de_passe_obligatoire">Mot de passe obligatoire</string>
+    <string name="nom_complet_obligatoire">Nom complet obligatoire</string>
+    <string name="adresse_de_livraison_obligatoire">Adresse de livraison obligatoire</string>
+    <string name="ville_obligatoire">Ville obligatoire</string>
+    <string name="le_mot_de_passe_doit_contenir_8_caract_res">le Mot de passe doit contenir 8 caractères</string>
+    <string name="votre_client_a_bien_t_ajouter">Votre client a bien été ajouter.</string>
+    <string name="nom_du_magasin_obligatoire">Nom du magasin obligatoire</string>
+    <string name="adresse_du_magasin_obligatoire">Adresse du magasin obligatoire</string>
+    <string name="ville_du_magasin_obligatoire">Ville du magasin obligatoire</string>
+    <string name="merci_d_uploader_une_image">Merci d\'uploader une image</string>
+    <string name="merci_de_remplir_tout_les_champs">Merci de remplir tout les champs</string>
+    <string name="produit_ajout">Votre demande a été enregistrée</string>
+    <string name="se_d_connecter">Se déconnecter</string>
+    <string name="voulez_vous_vous_d_connecter">Voulez vous vous déconnecter ?</string>
+    <string name="merci_de_vous_connecter">Merci de vous connecter</string>
+    <string name="mon_panier">Mon Panier</string>
+    <string name="merci_de_vous_connecter_pour_pouvoir_valider_votre_commande">Merci de vous connecter pour pouvoir valider votre commande</string>
+    <string name="annuler">Annuler</string>
+    <string name="vouler_vous_valider_votre_commande">Voulez vous valider votre commande ?</string>
+    <string name="icone_panier">Icone Panier</string>
+    <string name="cette_icone_vous_permet_d_acc_der_votre_panier">Cette icone vous permet d\'accéder à votre panier</string>
+    <string name="valider_la_commande">Valider la Commande</string>
+    <string name="conditions_g_n_rales_d_utilisation">Conditions générales d\'utilisation</string>
+    <string name="merci_de_vous_connecter_pour_pouvoir_acc_der_au_proofil_voulez_vous_vous_connectez">Merci de vous connecter pour pouvoir accéder au profil. Voulez vous vous connectez ?</string>
+    <string name="veuillez_remplir_tous_les_champs">Veuillez remplir tous les champs</string>
+    <string name="vos_informations_ont_t_modifi_es_avec_succ_s">Vos informations ont été modifiées avec succès</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié ?</string>
+    <string name="je_me_suis_souvenu_de_mon_mot_de_passe">Je me suis souvenu de mon mot de passe !</string>
+    <string name="joutia_est_une_plateforme_de_commerce_en_ligne_qui_permet_des_vendeurs_principalement_bas_s_dans_les_ventes_directes_aux_consommateurs_de_proposer_leurs_produits_sur_le_march_l_application_mobile_joutia_permet_aux_utilisateurs_de_naviguer_facilement_travers_une_large_gamme_de_produits_allant_de_l_lectronique_aux_v_tements_en_passant_par_des_accessoires_pour_la_maison_et_bien_plus_encore_elle_offre_des_fonctionnalit_s_telles_que_des_fltres_de_recherche_des_recommandations_personnalis_es_des_options_de_paiement_s_curis_et_la_possibilit_de_suivre_les_commandes_en_temps_r_el_les_utilisateurs_peuvent_galement_b_n_fcier_de_promotions_sp_ciales_de_r_ductions_et_de_coupons_de_plus_l_application_facilite_la_gestion_des_commandes_gr_ce_des_avis_sur_les_produits_un_service_client_r_actif_et_une_option_de_retour_si_n_cessaire_joutia_est_reconnu_pour_ses_prix_comp_titifs_mais_il_est_important_que_les_acheteurs_v_rifent_les_avis_des_produits_avant_d_effectuer_un_achat_afn_de_garantir_une_exp_rience_positive">Joutia est une plateforme de commerce en ligne qui permet à des vendeurs, principalement basés dans les ventes directes aux consommateurs, de proposer leurs produits sur le marché. L\'application mobile Joutia permet aux utilisateurs de naviguer facilement à travers une large gamme de produits, allant de l\'électronique aux vêtements, en passant par des accessoires pour la maison et bien plus encore. Elle offre des fonctionnalités telles que des fltres de recherche, des recommandations personnalisées, des options de paiement sécurisé et la possibilité de suivre les commandes en temps réel. Les utilisateurs peuvent également bénéfcier de promotions spéciales, de réductions et de coupons. De plus, l’application facilite la gestion des commandes grâce à des avis sur les produits, un service client réactif et une option de retour si nécessaire. Joutia est reconnu pour ses prix compétitifs, mais il est important que les acheteurs vérifent les avis des produits avant d\'effectuer un achat, afn de garantir une expérience positive</string>
+    <string name="cgu">Date de dernière mise à jour : 01/01/2025 \nLes présentes conditions d\'utilisation régissent l\'accès et l\'utilisation de la plateforme Joutia, ainsi que des\nservices et fonctionnalités associés. En accédant à notre site Web ou en utilisant notre application mobile,\nvous acceptez d’être lié par les présentes conditions. Si vous n’acceptez pas ces conditions, vous devez \ncesser d’utiliser nos services immédiatement. \n1. Accès à la plateforme \n1.1 Eligibilité : Vous devez avoir au moins 18 ans pour accéder à nos services. Si vous êtes mineur, vous \ndevez avoir l’autorisation de vos parents ou tuteurs légaux pour utiliser nos services. \n1.2 Accès : Nous nous réservons le droit de restreindre l\'accès à certaines parties de notre plateforme ou \nà l\'ensemble de celle-ci, à tout moment, et sans préavis. Vous êtes responsable de maintenir la \nconfidentialité de vos informations de compte (identifiant et mot de passe) et de toute activité réalisée \nsous votre compte. \n2. Services fournis \nJoutia est une plateforme de commerce en ligne permettant aux utilisateurs d\'acheter une large gamme \nde produits directement auprès de vendeurs. Nos services incluent : \nL’achat et la vente de produits physiques. \nLa possibilité de suivre vos commandes. \nLes options de paiement sécurisé. \nL’accès à des promotions, réductions et coupons. \n3. Création de compte \n3.1 Enregistrement : Pour utiliser certains services, vous devez créer un compte sur Joutia. Lors de la \ncréation de votre compte, vous vous engagez à fournir des informations exactes et complètes. Vous êtes \nresponsable de l\'exactitude des informations que vous fournissez. \n3.2 Sécurité du compte : Vous êtes responsable de la confidentialité de vos informations de compte et de \ntoutes les activités réalisées avec votre compte. En cas de suspicion d’utilisation frauduleuse de votre \ncompte, vous devez nous en informer immédiatement. \n4. Utilisation acceptable \n4.1 Usage personnel : Vous vous engagez à utiliser la plateforme Joutia uniquement à des fins \npersonnelles et non commerciales. Vous ne devez pas revendre, redistribuer ou commercialiser les \nproduits achetés via la plateforme. \n4.2 Comportement interdit : Il est interdit d’utiliser notre plateforme pour : \nViolenter ou harceler un autre utilisateur. \nPublier des contenus illégaux, diffamatoires, ou qui violent les droits de propriété intellectuelle. \nParticiper à des activités frauduleuses, telles que la falsification des informations ou la tentative d’obtenir \ndes produits ou services sans payer. \nInfecter notre plateforme avec des virus, logiciels malveillants ou toute autre forme de code nuisible. \n4.3 Respect des lois : Vous devez respecter toutes les lois locales, nationales et internationales \napplicables lors de l’utilisation de la plateforme. \n5. Commandes et paiements \n5.1 Commandes : Lorsque vous effectuez un achat sur Joutia, vous vous engagez à respecter les \nconditions spécifiques de chaque vendeur. Toute commande est soumise à disponibilité des produits et à \nl\'acceptation de votre paiement. \n5.2 Prix et paiements : Les prix des produits sont affichés en [insérer la devise] et incluent toutes les \ntaxes applicables. Nous acceptons différents modes de paiement, y compris les cartes bancaires, les \npaiements électroniques, etc. Vous vous engagez à payer l\'intégralité des montants dus lors de l\'achat. \n5.3 Livraison : Les délais et frais de livraison varient en fonction des produits et des vendeurs. Nous ne \npouvons garantir des délais de livraison exacts, mais nous nous efforçons de vous fournir des \ninformations précises au moment de la commande. \n6. Retours et remboursements \n6.1 Politique de retour : Les retours sont acceptés conformément aux politiques spécifiques des vendeurs\nprésents sur notre plateforme. Les produits retournés doivent être en bon état et dans leur emballage \nd\'origine, sauf en cas de produit défectueux. \n6.2 Remboursement : Les remboursements sont effectués en fonction de la politique du vendeur. Joutia \ns\'efforce de faciliter ce processus, mais nous ne sommes pas responsables des retours et \nremboursements effectués par les vendeurs. \n7. Propriété intellectuelle \nTous les contenus présents sur la plateforme Joutia (textes, images, logos, vidéos, marques, etc.) sont \nprotégés par des droits de propriété intellectuelle et appartiennent à Joutia ou à ses partenaires. Vous ne \npouvez pas copier, distribuer, ou reproduire ces éléments sans l’autorisation expresse de Joutia. \n8. Exonération de responsabilité \n8.1 Disponibilité de la plateforme : Nous nous efforçons de maintenir l’accès à la plateforme disponible \n24h/24, mais nous ne garantissons pas que notre site ou application soit exempt de pannes ou \nd’interruptions. Joutia ne pourra être tenue responsable des désagréments causés par des problèmes \ntechniques. \n8.2 Contenus des vendeurs : Joutia agit en tant que plateforme de mise en relation entre acheteurs et \nvendeurs, mais ne garantit pas la qualité, la légalité, ou la conformité des produits proposés par les \nvendeurs. Vous acceptez de vous adresser directement au vendeur pour toute réclamation concernant un\nproduit. \n8.3 Limitation de responsabilité : Joutia ne pourra être tenue responsable des pertes indirectes, \ndommages collatéraux ou de tout autre préjudice lié à l’utilisation de la plateforme, sauf en cas de \nnégligence grave de notre part. \n9. Modifications des Conditions d\'Utilisation \nNous nous réservons le droit de modifier ces conditions d’utilisation à tout moment. Toutes les \nmodifications seront publiées sur cette page avec une nouvelle date de mise à jour. Nous vous \nencourageons à consulter régulièrement ces conditions afin de rester informé des éventuelles \nmodifications. \n10. Droit applicable et litiges \nLes présentes conditions d\'utilisation sont régies par le droit [insérer le pays ou la région]. Tout litige \nrelatif à l’utilisation de la plateforme sera soumis aux juridictions compétentes de [insérer la ville ou la \nrégion]. \n11. Contact \nSi vous avez des questions concernant ces conditions d’utilisation ou si vous souhaitez nous faire part \nd’une préoccupation, vous pouvez nous contacter à l’adresse suivante : \nJoutia \n[Contact@joutia.ma] \n[www.joutia.ma]</string>
+    <string name="politique">"Date de dernière mise à jour : 01/01/2024 \nChez Joutia, nous prenons la protection de vos données personnelles très au sérieux. Cette politique de \nconfidentialité décrit les types d’informations que nous collectons, la manière dont nous les utilisons et les\nprotections que nous mettons en place pour garantir la sécurité de vos données lorsque vous utilisez \nnotre plateforme et application mobile. \n### 1. **Informations collectées** \nLorsque vous utilisez notre plateforme, nous pouvons collecter les types d'informations suivants : \n- **Informations personnelles** : nom, adresse e-mail, numéro de téléphone, adresse de livraison, \ninformations de paiement (carte bancaire, etc.), et toute autre donnée nécessaire pour compléter une \ntransaction. \n- **Données de navigation** : informations sur votre appareil, adresse IP, type de navigateur, pages \nvisitées sur notre site ou application mobile, et toute autre information collectée via les cookies. \n- **Informations transactionnelles** : historique d'achats, informations relatives aux paiements et aux \ncommandes. \n- **Données de localisation** : informations géographiques si vous avez activé la fonction de \ngéolocalisation sur notre application. \n### 2. **Utilisation des informations collectées** \nNous utilisons les informations que nous collectons pour les finalités suivantes : \n- **Gestion des commandes** : traitement, expédition et suivi des commandes. \n- **Amélioration de l'expérience utilisateur** : personnalisation de nos services, recommandations de \nproduits, et amélioration de la navigation sur notre site ou application. \n- **Communication** : envoi de notifications concernant les promotions, les réductions, les nouveaux \nproduits, les mises à jour de notre service, et pour répondre à vos questions ou préoccupations. \n- **Sécurité et prévention de la fraude** : pour protéger la sécurité de vos données personnelles et éviter \ntoute activité frauduleuse. \n- **Analyse et statistiques** : pour améliorer nos services et comprendre les préférences de nos \nutilisateurs. \n### 3. **Partage de vos données** \nNous ne vendons pas vos informations personnelles à des tiers. Cependant, nous pouvons partager vos \ndonnées avec des partenaires ou prestataires de services de confiance pour les finalités suivantes : \n- **Traitement des paiements** : nous partageons des informations de paiement avec nos prestataires de \nservices de paiement pour traiter vos transactions en toute sécurité. \n- **Livraison des produits** : nous partageons votre adresse de livraison avec nos partenaires logistiques \npour vous livrer les produits commandés. \n- **Marketing et promotions** : avec votre consentement, nous pouvons partager vos données avec des \npartenaires pour vous envoyer des offres spéciales et promotions personnalisées. \n### 4. **Sécurité des données** \nNous mettons en place des mesures de sécurité techniques et organisationnelles pour protéger vos \ndonnées personnelles contre la perte, l’accès non autorisé, la divulgation, l’altération ou la destruction. \nCependant, aucun système de sécurité n’est totalement invulnérable, et nous ne pouvons garantir à \n100% la sécurité de vos données sur Internet. \n### 5. **Cookies et technologies similaires** \nNous utilisons des cookies et des technologies similaires pour collecter des informations sur votre \nutilisation de notre site web et application mobile. Les cookies nous aident à personnaliser votre \nexpérience et à analyser l’utilisation de notre service. Vous pouvez gérer vos préférences de cookies \ndans les paramètres de votre navigateur ou de l'application. \n### 6. **Droits des utilisateurs** \nConformément à la législation applicable, vous disposez de certains droits concernant vos données \npersonnelles : \n- **Droit d'accès** : vous pouvez demander une copie des informations que nous détenons à votre sujet. \n- **Droit de rectification** : vous pouvez corriger les informations inexactes ou incomplètes que nous \navons sur vous. \n- **Droit à l’effacement** : vous pouvez demander la suppression de vos données personnelles, sous \ncertaines conditions. \n- **Droit de portabilité** : vous pouvez demander à recevoir vos données personnelles dans un format \nstructuré, couramment utilisé et lisible par machine, afin de les transférer à un autre responsable du \ntraitement. \n- **Droit d'opposition** : vous pouvez vous opposer au traitement de vos données personnelles dans \ncertains cas, notamment en ce qui concerne le marketing direct. \nSi vous souhaitez exercer l’un de ces droits, vous pouvez nous contacter à l'adresse suivante : [adresse \ne-mail de contact]. \n### 7. **Conservation des données** \nNous conservons vos données personnelles aussi longtemps que nécessaire pour remplir les finalités \ndécrites dans cette politique de confidentialité ou pour répondre à nos obligations légales, réglementaires \net contractuelles. \n### 8. **Modifications de la politique de confidentialité** \nNous nous réservons le droit de mettre à jour cette politique de confidentialité. Toute modification sera \npubliée sur cette page avec la date de mise à jour. Nous vous encourageons à consulter régulièrement \ncette politique pour rester informé de la manière dont nous protégeons vos données personnelles. \n### 9. **Contact** \nSi vous avez des questions concernant cette politique de confidentialité ou si vous souhaitez exercer vos \ndroits, vous pouvez nous contacter à l’adresse suivante : \n**Joutia** \nBouskoura dyar yasser imm 10 N 04 \nContact@joutia.ma \nwww.joutia.ma "</string>
+    <string name="votre_liste_est_vide_merci_de_faire_une_commande">Votre liste est vide, merci de faire une commande</string>
+    <string name="l_email_de_r_cup_ration_envoy_avec_succes_merci_de_v_rifier_votre_adresse_mail">L\'email de récupération, envoyé avec succes, merci de vérifier votre adresse mail.</string>
+    <string name="details">Détails</string>
+    <string name="votre_commande_a_t_bien_ajout_l_attente_d_un_retour_veuillez_profiter_de_notre_application">Votre commande a été bien ajouté, à l\'attente d\'un retour, veuillez profiter de notre application</string>
+    <string name="merci_de_vouloir_acc_der_pour_pouvoir_acc_der_vos_commands">Merci de vouloir accéder pour pouvoir accéder à vos commandes</string>
+    <string name="vous_ne_disposez_pas_de_commande_avec_ce_statut">Vous ne disposez pas de commande avec ce statut</string>
+    <string name="listes_des_commandes">Listes des commandes</string>
+    <string name="liste_des_cat_gories">Liste des catégories</string>
+    <string name="parametres">PARAMETRES</string>
+    <string name="mes_produits">Mes Produits</string>
+    <string name="etat_des_produits">Etat des produits</string>
+    <string name="vous_ne_disposez_pas_de_produits_avec_ce_statut">Vous ne disposez pas de produits avec ce statut</string>
+    <string name="etat_des_commandes">Etat des Commandes</string>
+    <string name="etes_vous_s_r_de_vouloir_supprimer_cet_article">Etes-vous sûr de vouloir supprimer cet article ?</string>
+    <string name="le_num_ro_de_t_l_phone_est_vide">Le numèro de téléphone est vide</string>
+    <string name="cet_e_mail_est_d_j_utilis_merci_d_utiliser_un_autre_e_mai">Cet e-mail est déjà utilisé. Merci d\'utiliser un autre e-mail</string>
+    <string name="modifier">Modifier</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="voulez_vous_modifier_ce_produit">Voulez-vous modifier ce produit ?</string>
+    <string name="voulez_vous_supprimer_ce_produit">Voulez-vous supprimer ce produit ?</string>
+    <string name="tout_les_champs_sont_obligatoires">Tout les champs sont obligatoires</string>
+    <string name="d_tails">Détails</string>
+    <string name="les_informations_ont_t_bien_modifi">Les informations ont été bien modifié</string>
+    <string-array name="spinner_items">
+        <item></item>
+        <item>Objets connectés</item>
+        <item>Beauté &amp; Santé </item>
+        <item>Sport &amp; Loisir</item>
+        <item>Bébé &amp; Jouets</item>
+        <item>Electroménager</item>
+        <item>Mode &amp; Accessoires</item>
+        <item>Maison &amp; Décoration</item>
+
+    </string-array>
+
+    <string-array name="connected">
+        <item>Samsung</item>
+        <item>Iphone</item>
+        <item>Huawei</item>
+        <item>Redmi</item>
+        <item>Asus</item>
+        <item>MacBook</item>
+        <item>JBL</item>
+        <item>Xiaomi</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="beauty">
+        <item>Bioderma</item>
+        <item>HTC</item>
+        <item>Braun</item>
+        <item>L\'oréal</item>
+        <item>Asus</item>
+        <item>Disaar</item>
+        <item>LahsaBio</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="sports">
+        <item>Adidas</item>
+        <item>Nike</item>
+        <item>Reebook</item>
+        <item>Decathlon</item>
+        <item>Bpi Sports</item>
+        <item>Puma</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="baby">
+        <item>Johnson Johnson</item>
+        <item>Caduminos</item>
+        <item>Biolane</item>
+        <item>Cerave</item>
+        <item>Mixa</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="electro">
+        <item>Samsung</item>
+        <item>Sony</item>
+        <item>LG</item>
+        <item>Whirpool</item>
+        <item>Tefal</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="mode">
+        <item>Zara</item>
+        <item>HM</item>
+        <item>Mango</item>
+        <item>Shein</item>
+        <item>Dove</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="maison">
+        <item>Maxis</item>
+        <item>Maison verte</item>
+        <item>Carolin</item>
+        <item>Mir</item>
+        <item>Yaqa</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="Ville">
+        <item>Agadir</item>
+        <item>AL Hoceima</item>
+        <item>Asfi</item>
+        <item>Assilah</item>
+        <item>Azemmour</item>
+        <item>Ben-Guerrir</item>
+        <item>Beni-mélal</item>
+        <item>Berrechid</item>
+        <item>Berkane</item>
+        <item>Beni-mélal</item>
+        <item>Bouskoura</item>
+        <item>Boujdour</item>
+        <item>Casablanca</item>
+        <item>Chefchaoun</item>
+        <item>Dakhla</item>
+        <item>El Jadida</item>
+        <item>Erfoud</item>
+        <item>Errachidia</item>
+        <item>Essaouira</item>
+        <item>Fes</item>
+        <item>Guelmim</item>
+        <item>Guercif</item>
+        <item>Inzegane</item>
+        <item>Ifrane</item>
+        <item>Kalaat MGouna</item>
+        <item>Kenitra</item>
+        <item>Khenifra</item>
+        <item>Khouribga</item>
+        <item>Laarache</item>
+        <item>Laayoune</item>
+        <item>Marrakech</item>
+        <item>Meknes</item>
+        <item>MDiq</item>
+        <item>Merzouga</item>
+        <item>Mohammédia</item>
+        <item>Moulay yaakoub</item>
+        <item>Nador</item>
+        <item>Oualidia</item>
+        <item>Ouarzazate</item>
+        <item>Oujda</item>
+        <item>Oulmès</item>
+        <item>Rabat</item>
+        <item>Rissani</item>
+        <item>Sale</item>
+        <item>Sefrou</item>
+        <item>Settat</item>
+        <item>Sidi Slimane</item>
+        <item>Skhirate</item>
+        <item>Skhour Rhamna</item>
+        <item>Skoura</item>
+        <item>Taghazout</item>
+        <item>Taroudant</item>
+        <item>Tarfaya</item>
+        <item>Tata</item>
+        <item>Taza</item>
+        <item>Tafraout</item>
+        <item>Temara</item>
+        <item>Tetouane</item>
+        <item>Tiznit</item>
+        <item>Zagora</item>
+    </string-array>
+
+
+</resources>

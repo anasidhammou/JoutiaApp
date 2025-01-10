@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JoutiaApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Vendeur.ModificationProduitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendeur.DetailsProductAtivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PolitiqueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CGUActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PanierActivity"
+            android:exported="false" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDwNGtthulsrEBnCDKhCH_ykv-4y0bzPDI" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4542637297782216~6654958205" />
+        <meta-data
+            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+            android:value="true" />
+
+        <activity
+            android:name=".Products.DetailsTypeProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommandeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendeur.ProfilVendeurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendeur.MainVendeurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.HouseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ConnectedObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ElectrikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.BabyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.SportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.BeautyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LangueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendeur.AddNewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendeur.VendeurPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.DetailsProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.ElectroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Choix_langue_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".InscriptionVendeurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscriptionClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConnexionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

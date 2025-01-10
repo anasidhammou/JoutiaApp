@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/accueil"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/categories"
+        android:title="@string/cat_gories"
+        android:icon="@drawable/categorie"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/mon_compte"
+        android:icon="@drawable/utilisateur"/>
+
+
+
+    <item
+        android:id="@+id/aide"
+        android:title="@string/aide"
+        android:icon="@drawable/question"/>
+
+
+</menu>
