@@ -82,6 +82,8 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
 
     DatabaseReference allVendeur;
 
+    String nommagasin;
+
     private static final int REQUEST_CALL_PERMISSION = 1;
 
     @Override
@@ -240,7 +242,7 @@ public class DetailsTypeProductActivity extends AppCompatActivity {
     }
 
     public void goAdd(View view) {
-            PanierUser panierUser = new PanierUser(urls,NomPord.getText().toString(),amounts.toString(),stype);
+            PanierUser panierUser = new PanierUser(urls,NomPord.getText().toString(),amounts.toString(),stype,NomMagasin.getText().toString());
             panierUsers.add(panierUser);
             SharedPreferencesUtils.saveArray(this, "PanierKey", panierUsers);
             Toast.makeText(this, "Produit ajouté au panier", Toast.LENGTH_SHORT).show();

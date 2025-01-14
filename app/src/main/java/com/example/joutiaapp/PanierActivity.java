@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -121,6 +122,18 @@ public class PanierActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        // Ajouter un callback pour gérer le bouton "Retour"
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                SharedPreferencesUtils.saveArray(PanierActivity.this, "PanierKey", retrievedList);
+            }
+        };
+
+        // Ajouter le callback au dispatcher
+        getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     private void initializeRecyclerview() {

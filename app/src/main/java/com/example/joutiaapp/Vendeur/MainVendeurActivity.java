@@ -56,6 +56,8 @@ public class MainVendeurActivity extends AppCompatActivity implements BottomNavi
             fragment = new ProduitVendeurFragment();
         }else if(id == R.id.settingsv){
             fragment = new SettingsVendeurFragment();
+        }else if(id == R.id.NotificationV){
+            fragment = new NotificationVendeurFragment();
         }
         if (fragment != null) {
             loadFragment(fragment);

@@ -1,5 +1,6 @@
-package com.example.joutiaapp.Fragment;
+package com.example.joutiaapp.Vendeur;
 
+import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,15 +14,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.joutiaapp.Adapter.NotificationAdapter;
 import com.example.joutiaapp.Models.Notifications;
+import com.example.joutiaapp.Models.product;
 import com.example.joutiaapp.R;
-import com.example.joutiaapp.Vendeur.AddNewProductActivity;
-import com.example.joutiaapp.Vendeur.DetailsNotificationActivity;
-import com.example.joutiaapp.Vendeur.VendeurPrincipalActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,8 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class HomeVendeurFragment extends Fragment {
+public class NotificationVendeurFragment extends Fragment {
 
     DatabaseReference allnotification;
     List<Notifications> allproductarray = new ArrayList<>();
@@ -46,27 +43,19 @@ public class HomeVendeurFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_home_vendeur, container, false);
+        View view = inflater.inflate(R.layout.fragment_notification_vendeur, container, false);
         allnotification = FirebaseDatabase.getInstance().getReference().child("notification");
         findView(view);
         return view;
     }
 
     private void findView(View view) {
-        ImageView addnew = view.findViewById(R.id.goAdd);
-        addnew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getContext(), AddNewProductActivity.class);
-                startActivity(i);
-            }
-        });
-
         noproduit = view.findViewById(R.id.noNotif);
         recyclerView = view.findViewById(R.id.recyclerViewNotifications);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         verifyLogin();
     }
+
 
     private void verifyLogin() {
         if (isUserLoggedIn(getContext())) {
@@ -114,7 +103,7 @@ public class HomeVendeurFragment extends Fragment {
         adapter.setOnDataChangeListener(new NotificationAdapter.OnDataChangeListener() {
             @Override
             public void showDetail(Object object) {
-                Intent i = new Intent(getContext(), DetailsNotificationActivity.class);
+                Intent i = new Intent(getContext(),DetailsNotificationActivity.class);
                 i.putExtra("Id",object.toString());
                 startActivity(i);
             }

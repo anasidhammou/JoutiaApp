@@ -44,6 +44,7 @@ public class AdapterPanier extends RecyclerView.Adapter<AdapterPanier.ViewHolder
 
         holder.NomProd.setText(dataList.get(position).NomProduit);
         holder.PrixProd.setText("Prix : "+dataList.get(position).Prix+" Dhs");
+        holder.NomMag.setText("Magasin : "+dataList.get(position).nomMagasin);
         Glide.with(context)
                 .load(dataList.get(position).ImageBase) // Remplacez par la méthode pour obtenir l'URL de l'image
                 .placeholder(R.drawable.default_img) // Image de chargement par défaut
@@ -71,6 +72,9 @@ public class AdapterPanier extends RecyclerView.Adapter<AdapterPanier.ViewHolder
         ImageView imageProd;
         TextView NomProd;
         TextView PrixProd;
+        TextView NomMag;
+
+
 
         ImageView TrashArticle;
 
@@ -80,6 +84,7 @@ public class AdapterPanier extends RecyclerView.Adapter<AdapterPanier.ViewHolder
             NomProd = itemView.findViewById(R.id.nom_prodPan);
             PrixProd = itemView.findViewById(R.id.prix_prodPan);
             TrashArticle = itemView.findViewById(R.id.imageTrash);
+            NomMag = itemView.findViewById(R.id.nomM_prodPan);
         }
     }
 

@@ -69,7 +69,13 @@ public class CustomGridAdapterView extends BaseAdapter {
         }
 
         product currentProduct = allproductarray.get(position);
-        holder.name.setText(currentProduct.Nom.toString());
+        String originalText = currentProduct.Nom.toString();
+        if (originalText.length() > 20) {
+            String truncatedText = originalText.substring(0, 20) + "...";
+            holder.name.setText(truncatedText);
+        } else {
+            holder.name.setText(originalText);
+        }
         holder.price.setText(currentProduct.Montant_TTC + " Dhs");
 
         List<String> productImages = arrayList.get(position);

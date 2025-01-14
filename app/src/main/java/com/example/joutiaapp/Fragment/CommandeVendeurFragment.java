@@ -1,5 +1,6 @@
 package com.example.joutiaapp.Fragment;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -35,20 +36,49 @@ public class CommandeVendeurFragment extends Fragment {
 
     private void findView(View view) {
 
-        Status status1 = new Status("0", getString(R.string.en_cours));
-        Status status2 = new Status("1", getString(R.string.livr_e));
-        Status status3 = new Status("2", getString(R.string.refus_e));
-        Status status4 = new Status("3", getString(R.string.annul_e));
+        String appLanguage = getAppLanguage();
 
-        liststate.add(status1);
-        liststate.add(status2);
-        liststate.add(status3);
-        liststate.add(status4);
+        if(appLanguage.equals("ar")){
+
+            Status status0 = new Status("0", "في تَقَدم");
+            Status status1 = new Status("1", "كسوة");
+            Status status2 = new Status("2","رفض");
+            Status status3 = new Status("2","تم الإلغاء");
+
+
+            liststate.add(status0);
+            liststate.add(status1);
+            liststate.add(status2);
+            liststate.add(status3);
+
+        }else {
+
+            Status status0 = new Status("0", "En cours");
+            Status status1 = new Status("1", "Livrée");
+            Status status2 = new Status("2", "Refusée");
+            Status status3 = new Status("2", "Annulée");
+
+            liststate.add(status0);
+            liststate.add(status1);
+            liststate.add(status2);
+            liststate.add(status3);
+
+        }
 
         recyclerView = view.findViewById(R.id.recycler_view);
         initialiserecycler();
 
     }
+
+    public String getAppLanguage() {
+        Configuration config = getResources().getConfiguration();
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            return config.getLocales().get(0).getLanguage(); // Pour Android 7.0+ (API 24+)
+        } else {
+            return config.locale.getLanguage(); // Pour Android plus ancien
+        }
+    }
+
 
     private void initialiserecycler() {
         adapter = new CustomListStatusAdapter(getContext(), liststate);

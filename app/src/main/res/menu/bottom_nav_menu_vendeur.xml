@@ -10,6 +10,11 @@
         android:icon="@drawable/traits"/>
 
 
+    <item
+        android:id="@+id/NotificationV"
+        android:title="@string/notifications"
+        android:icon="@drawable/notification"/>
+
 
     <item
         android:id="@+id/settingsv"

@@ -8,15 +8,18 @@ public class PanierUser {
 
     public String type;
 
+    public String nomMagasin;
+
 
     public PanierUser() {
     }
 
-
-    public PanierUser(String imageBase, String nomProduit, Object prix, String type) {
+    public PanierUser(String imageBase, String nomProduit, Object prix, String type, String nomMagasin) {
         ImageBase = imageBase;
         NomProduit = nomProduit;
         Prix = prix;
         this.type = type;
+        this.nomMagasin = nomMagasin;
     }
 }
+

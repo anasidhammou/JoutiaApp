@@ -98,9 +98,6 @@ public class HomeFragment extends Fragment {
         panier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
                 Intent i = new Intent(getContext(), PanierActivity.class);
                 startActivity(i);
             }

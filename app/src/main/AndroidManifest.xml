@@ -25,6 +25,9 @@
         android:theme="@style/Theme.JoutiaApp"
         tools:targetApi="31">
         <activity
+            android:name=".Vendeur.DetailsNotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Vendeur.ModificationProduitActivity"
             android:exported="false" />
         <activity
